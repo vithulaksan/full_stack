@@ -1,0 +1,35 @@
+.navigation{
+    position: absolute;
+    width: 305px;
+    height: 199px;
+    left: 564px;
+    top: 425px;
+    ul{
+        width: 305px;
+        height: 199px;
+        a{
+            text-decoration: none;
+            background: #A0C4FC;
+            border-radius: 16px;
+            width: 305px;
+            height: 73px;
+            li{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #000000;
+                text-decoration: none;
+                list-style: none;
+                background: #A0C4FC;
+                border-radius: 16px;
+                width: 215px;
+                height: 53px;
+                margin-bottom: 45px;
+                padding-left: 100px;
+                padding-top: 20px;
+            }
+        }
+    }
+}

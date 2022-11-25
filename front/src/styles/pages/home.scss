@@ -1,0 +1,28 @@
+.home{
+    .cadre{
+        width: 100vw;
+        height: 145px;
+        left: 0px;
+        top: 0px;
+        background: $blue;
+        .text{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $black;
+            margin: auto;
+            width: 1440px;
+            justify-content: center;
+            align-content: center;
+            padding-top: 40px;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}

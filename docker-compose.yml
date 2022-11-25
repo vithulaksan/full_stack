@@ -1,24 +1,24 @@
 version: '2'
 
 services:
-  frontend:
-      build : 
-        context : . 
-        dockerfile : ./front/Dockerfile
-      environment:
-        CHOKIDAR_USEPOLLING: "true"
-      ports :
-        - "3000:3000"
-      volumes:
-        - './front/:/app'
-        - '/app/node_modules'
-      # command : npm start
-      extra_hosts:
-      - "host.docker.internal:host-gateway"
+  # frontend:
+  #     build : 
+  #       context : . 
+  #       dockerfile : ./front/Dockerfile
+  #     environment:
+  #       CHOKIDAR_USEPOLLING: "true"
+  #     ports :
+  #       - "3000:3000"
+  #     volumes:
+  #       - './front/:/app'
+  #       - '/app/node_modules'
+  #     # command : npm start
+  #     extra_hosts:
+  #     - "host.docker.internal:host-gateway"
       
   web :
     depends_on:
-      - db
+      - db 
     build : "./full_stack"
     ports : 
       - "8000:8000"
@@ -28,14 +28,10 @@ services:
     command: bash -c "python3 manage.py makemigrations & python3 manage.py migrate & python3 manage.py runserver 0.0.0.0:8000"
   
   db:
-    image: postgres:14.1-alpine
-    # command: --lower_case_table_names=1
+    image: postgres:13
+    # volumes:
+    #   - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_DB=food
-      - POSTGRES_USER=Vithu
-      - POSTGRES_PASSWORD=secret
-    ports:
-      - '5433:5432'
-
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
     volumes:
-       - ./full_stack/postgres-data:/var/lib/postgresql/data
+       - ./full_stack/postgres:/var/lib/postgresql/data

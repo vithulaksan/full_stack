@@ -16,7 +16,7 @@ une page de connexion, il est possible pour l’utilisateur de s’identifier ou
 
 Une page Identifiant, cette page donne les différentes informations de l’utilisateur (Nom, Prénom, Age, Sexe, Poids, Taille, Nb de sport par semaine…) et il est possible de les modifier en cas de modification de son rythme de sport ou bien de son poids.  
 On calcule le nombre de calorie nécessaire par jours selon les informations renseignées par l'individu.  
-Grâce à cette page, il est également possible de pouvoir ajouter les différents aliments d’un futur plat ainsi que la quantité des différents aliments. Ce qui a pour but de pouvoir calculer le nombre de calories précis d’un plat.
+Grâce à cette page, il est également possible de pouvoir ajouter les différents aliments d’un futur plat ainsi que la quantité des différents aliments. Ce qui a pour but de pouvoir calculer le nombre de calories précis d’un plat ( Attention cliquer sur le bouton "search" mis à votre disposition et non sur Entrer ).
 
 
 # 3-Lancement Django Rest & React App

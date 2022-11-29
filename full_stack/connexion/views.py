@@ -47,7 +47,7 @@ def DetailsUser(request,DUser):
     print(result.nom)
     return Response({"nom": result.nom,
     "prenom" : result.prenom,
-    "Taille cm" : result.taille_cm,
+    "Taille_cm" : result.taille_cm,
     "poids": result.poids,
     "age" : result.age,
     "sexe" : result.sexe,

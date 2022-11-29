@@ -1,7 +1,65 @@
 .formulaire{
-    background-color: $white;
-    width: 1191px;
-    height: 625px;
     margin: auto;
-    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    color: #344D59;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+.container-form > div {
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container-form > div > label {
+    position: absolute;
+    right:200px;
+
+}
+
+#fq-sport {
+    width: 106px;
+}
+#psw-label-1 {
+    width: 176px;
+}
+#psw-label-2 {
+    width: 192px;
+}
+
+.container-form > div > p {
+    position: absolute;
+    left:200px;
+    width: 400px;
+}
+
+.container-form > div > input {
+    border-radius: 25px;
+    height: 25px;
+    padding: 0 5px;
+}
+
+.submit-btn {
+    background-color: #344D59;
+    color:#B8CBD0;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.submit-btn:hover {
+    border:2px solid #B8CBD0;
 }

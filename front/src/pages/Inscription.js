@@ -7,7 +7,7 @@ const Inscription = () => {
         <div className='inscription'>
             <h1>Inscription</h1>
             <Formulaire/>
-
+            <Retour/>
         </div>
     );
 };

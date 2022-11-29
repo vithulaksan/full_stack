@@ -18,3 +18,8 @@ def FoodItem(request,FoodItem):
     result_serializer = AlimentSerialiszes(result,many=True)
     return Response({"status": result_serializer.data})
 
+@api_view(["GET"])
+def FoodItems(request):
+    result = Aliments.objects.all()
+    result_serializer = AlimentSerialiszes(result,many=True)
+    return Response({"status": result_serializer.data})

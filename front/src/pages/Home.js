@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className='home'>
             <div className='cadre'>
-                <p className='text'>Perdre du poid efficacement et durablement</p>
+                <p className='text'>Perdre du poids efficacement et durablement</p>
             </div>
             <img src="/Picture/Capture.png" alt='Image annonce'/>
             <Navigation/>

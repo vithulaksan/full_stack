@@ -53,15 +53,21 @@ function FormulaireConnexion() {
 //     });
     return (
         <div className='formulaireConnexion'>
-            <form method="post" action="Identifiant.js"  onSubmit={handleSubmit}>
-                <label for="username">username:</label>
+          <form method="post" action="Identifiant.js">
+            <div className='container-form'>
+              <div>
+                <label for="username">Pseudo </label>
                 <input type="text"  value={username} id="username"  onChange={(e) => setUsername(e.target.value)} />
-                <br/>
-                <label for="password">Votre mot de passe :</label>
+              </div>
+              <div>
+                <label for="password" id="psw-txt">Mot de passe </label>
                 <input type="password"  value={password} id="password"  onChange={(e) => setPass(e.target.value)} />
-                <br/>
+              </div>
 
-                <button type="submit">Se connecter</button>
+              <div className="submit-btn">
+                <div className="submit-txt" onClick={handleSubmit}>Se Connecter</div>
+              </div>
+            </div>
                 
                 {/* possible de faire du jinja ? */}
                 {/* <NavLink to="/id">

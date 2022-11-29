@@ -1,7 +1,46 @@
 .formulaireConnexion{
-    background-color: $white;
-    width: 1191px;
-    height: 425px;
     margin: auto;
-    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    color: #344D59;
 }
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+.container-form > div {
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-form > div > label {
+    position: absolute;
+    right:200px;
+}
+#psw-txt {
+    width:85px;
+}
+.submit-btn {
+    background-color: #344D59;
+    color:#B8CBD0;
+    width: 115px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.submit-btn:hover {
+    border:2px solid #B8CBD0;
+}
+

@@ -58,3 +58,9 @@ Pour la connexion, l’utilisateur va devoir se créer un compte, il faut faire 
 1 chiffre
 1 lettre minuscule
 1 lettre majuscule 
+
+# Equipe  
+
+Naguleswaran Vithulaksan 
+Pochon Mathieu
+Morel Marius

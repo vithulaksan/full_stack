@@ -7,9 +7,16 @@ import ModifierBtn from '../component/ModifierBtn';
 const Identifiant = () => {
     return (
         <div className='identifiant'>
+            <h1>Mes Informations</h1>
             <IdClient/>
-            <Deconnecter/>
-            <ModifierBtn/>
+            <div className='container-btn'>
+              <div className='btn-item'>
+                <ModifierBtn/>
+              </div>
+              <div className='btn-item'>
+                <Deconnecter/>
+              </div>
+            </div>
             <Courbe/>
         </div>
     );

@@ -53,13 +53,20 @@ const IdClient = () => {
     let content = [`${items.nom}`,`${items.prenom}`,`${items.Taille_cm}`,`${items.poids}`,`${items.age}`,`${items.sexe}`,calorie_user]
     return (
         <div className='client'>
+          <div className="label-container">
             <label id='Nom'>Nom : {content[0]}</label>
             <label id='Prenom'>Prenom : {content[1]}</label>
             <label id='Taille'>Taille : {content[2]}</label>
+          </div>
+          <div className="label-container">
             <label id='Poids'>Poids : {content[3]}</label>
             <label id='Âge'>Age : {content[4]}</label>
             <label id='sexe'>Sexe : {content[5]}</label>
-            <p>Vous devez consomez {Math.round(calorie_user)} kcal par jours</p>
+          </div>
+          <h2>Ma Consommation</h2>
+          <div className="label-container">
+            <p className='conso'>Vous devez consomez <strong>{Math.round(calorie_user)}</strong> kcal par jours</p>
+          </div>
         </div>
     );
 };

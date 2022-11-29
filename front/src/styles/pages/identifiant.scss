@@ -1,3 +1,18 @@
-.identifiant{
-    
+.container-btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-item {
+    margin: 0px 40px;
+    background-color: #B8CBD0;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.btn-item:hover {
+    border:2px solid #344D59;
+    margin: 0px 36px;
 }

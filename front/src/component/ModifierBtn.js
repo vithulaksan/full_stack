@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const ModifierBtn = () => {
     return (
-        <div className='modifier'>
-            <NavLink to="/modifier">
+        <div className='modifier-btn'>
+            <NavLink to="/modifier" className="modifier-txt">
                 <p>Modification</p>
             </NavLink>
         </div>

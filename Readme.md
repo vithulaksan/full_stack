@@ -53,14 +53,14 @@ Notre API fonctionne sur http://localhost:8000/ .
 Et notre application est quant à elle visualisable sur http://localhost:3000/ .
 
 
-Pour la connexion, l’utilisateur va devoir se créer un compte, il faut faire attention il a des conditions minimum sur le mot de passe : 
-8 caractères
-1 chiffre
-1 lettre minuscule
-1 lettre majuscule 
+Pour la connexion, l’utilisateur va devoir se créer un compte, il faut faire attention il a des conditions minimum sur le mot de passe :   
+8 caractères  
+1 chiffre  
+1 lettre minuscule  
+1 lettre majuscule   
 
 # Equipe  
 
-Naguleswaran Vithulaksan 
-Pochon Mathieu
+Naguleswaran Vithulaksan   
+Pochon Mathieu  
 Morel Marius
